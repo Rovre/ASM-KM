@@ -24,7 +24,7 @@ body {
     box-sizing: border-box;
     font-family: 'Galmuri9', sans-serif; /* 모든 텍스트의 기본 폰트를 Galmuri9으로 설정 */
     font-size: 1.1em; /* 모든 텍스트의 기본 크기를 1.1em으로 설정 */
-    color: #E0E0E0; /* 기본 텍스트 색상 */
+    color: white; /* 기본 텍스트 색상 */
     line-height: 1.5; /* 기본 줄 간격 */
     word-break: keep-all; /* 한글 단어 단위 줄바꿈 */
     overflow-wrap: break-word; /* 긴 단어 줄바꿈 */
@@ -162,7 +162,7 @@ body {
     margin-bottom: 15px;
     font-size: 1.1em;
     line-height: 1.6;
-    color: #E0E0E0;
+    color: white ;
 }
 
 /* 기존 강조색 */
