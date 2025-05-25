@@ -19,24 +19,69 @@ body {
     margin: 0;
     padding: 20px;
     display: flex;
-    justify-content: flex-start; /* 왼쪽 정렬 */
+    justify-content: center; /* 전체 콘텐츠 가운데 정렬 */
     align-items: flex-start; /* 상단 정렬 */
     min-height: 100vh;
     box-sizing: border-box;
-    font-size: 1.2em; /* 모든 텍스트 크기 동일하게 설정 */
+    font-size: 1.2em; /* 모든 텍스트 기본 크기 설정 */
+    word-wrap: break-word; /* 긴 단어 줄바꿈 */
+    overflow-wrap: break-word; /* 오버플로우 단어 줄바꿈 */
 }
 
 .container {
-    max-width: 800px;
-    padding: 0; /* 패딩 제거하여 왼쪽 정렬 */
+    max-width: 800px; /* 최대 너비 설정 */
+    padding: 0;
     line-height: 1.6;
-    text-align: left; /* 텍스트 왼쪽 정렬 */
+    text-align: center; /* container 내부 텍스트 가운데 정렬 */
 }
 
 p {
     margin-bottom: 0.5em; /* 단락 사이 간격 조절 */
+    text-align: left; /* 기본 단락은 왼쪽 정렬 */
 }
 
+/* Galmuri11-Condensed 폰트가 적용된 텍스트 스타일 */
+.galmuri11-condensed-font {
+    font-family: 'Galmuri11-Condensed', sans-serif;
+    font-size: 1.5em; /* 크기 조금 키움 */
+    text-align: center; /* 가운데 정렬 */
+    margin-bottom: 1em; /* 간격 추가 */
+}
+
+.main-title {
+    font-size: 2em; /* 메인 타이틀은 더 크게 */
+    margin-bottom: 1.5em;
+}
+
+
+/* Galmuri9 폰트가 적용된 텍스트 스타일 */
 .galmuri9-font {
-    font-family: 'Galmuri9', sans-serif; /* 특정 부분 Galmuri9 폰트 적용 */
+    font-family: 'Galmuri9', sans-serif;
+    font-size: 1.1em; /* Galmuri11-Condensed보다 작게 */
+    text-align: left; /* 왼쪽 정렬 유지 */
+}
+
+/* 모바일 화면을 위한 미디어 쿼리 */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+        font-size: 1.1em; /* 모바일에서 전체 글자 크기 약간 줄임 */
+    }
+
+    .container {
+        max-width: 100%; /* 모바일에서는 최대 너비를 100%로 */
+        padding: 0 10px; /* 좌우 여백 추가 */
+    }
+
+    .galmuri11-condensed-font {
+        font-size: 1.3em; /* 모바일에서 크기 조정 */
+    }
+
+    .main-title {
+        font-size: 1.8em; /* 모바일에서 메인 타이틀 크기 조정 */
+    }
+
+    .galmuri9-font {
+        font-size: 1em; /* 모바일에서 크기 조정 */
+    }
 }
