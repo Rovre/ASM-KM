@@ -13,10 +13,11 @@
     font-style: normal;
 }
 
+/* 나머지 CSS는 동일 */
 body {
-    background-color: #000; /* 검정색 배경 */
+    background-color: #000;
     margin: 0;
-    padding: 20px; /* 약간의 여백 추가 */
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -25,52 +26,49 @@ body {
 }
 
 .game-description-container {
-    max-width: 800px; /* 내용의 최대 너비 설정 */
+    max-width: 800px;
     text-align: left;
-    line-height: 1.5; /* 줄 간격 설정 */
-    /* 모든 텍스트의 기본 색상 및 크기 설정 */
-    color: #E0E0E0; /* 기본 흰색 계열 */
-    font-size: 1.1em; /* 모든 글씨의 기본 크기 */
+    line-height: 1.5;
+    color: #E0E0E0;
+    font-size: 1.1em;
 }
 
 .game-title {
-    font-family: 'Galmuri11-Condensed', sans-serif;
-    color: #c56f68; /* CHAOTIC SOLITAIRE 색상 */
-    font-size: 1.1em; /* 모든 글씨와 동일한 크기 */
+    font-family: 'Galmuri11-Condensed'; /* sans-serif 제거 */
+    color: #c56f68;
+    font-size: 1.1em;
     margin-bottom: 20px;
-    letter-spacing: 1px; /* 자간 조절 */
-    /* h1 태그의 기본 마진을 초기화하여 다른 p 태그와 높이를 맞춥니다. */
+    letter-spacing: 1px;
     margin-top: 0;
 }
 
 .game-intro {
-    font-family: 'Galmuri9', sans-serif;
-    color: white; /* 본문 흰 글자 */
-    font-size: 1.1em; /* 모든 글씨와 동일한 크기 */
+    font-family: 'Galmuri9'; /* sans-serif 제거 */
+    color: white;
+    font-size: 1.1em;
     margin-bottom: 30px;
 }
 
 .difficulty {
-    font-family: 'Galmuri11-Condensed', sans-serif;
-    color: #c56f68; /* DIFFICULTY: 색상 */
-    font-size: 1.1em; /* 모든 글씨와 동일한 크기 */
+    font-family: 'Galmuri11-Condensed'; /* sans-serif 제거 */
+    color: #c56f68;
+    font-size: 1.1em;
     margin-bottom: 20px;
-    letter-spacing: 1px; /* 자간 조절 */
+    letter-spacing: 1px;
 }
 
 .difficulty-star {
-    color: #ffce4d; /* ★---- 부분 색상 */
-    /* 폰트 패밀리는 상속받으므로 따로 지정하지 않습니다. */
+    color: #ffce4d;
 }
 
 .game-info-playable {
-    font-family: 'Galmuri9', sans-serif;
-    color: #c56f68; /* Playable with a standard deck: 부분 색상 */
-    font-size: 1.1em; /* 모든 글씨와 동일한 크기 */
+    font-family: 'Galmuri9'; /* sans-serif 제거 */
+    color: #c56f68;
+    font-size: 1.1em;
     margin-bottom: 5px;
 }
 
 .game-info-value {
-    font-family: 'Galmuri9', sans-serif; /* 동일 폰트 */
-    color: #ffa32a; /* No 부분 색상 */
+    font-family: 'Galmuri9'; /* sans-serif 제거 */
+    color: #ffa32a;
 }
