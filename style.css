@@ -19,53 +19,24 @@ body {
     margin: 0;
     padding: 20px;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: flex-start; /* 왼쪽 정렬 */
+    align-items: flex-start; /* 상단 정렬 */
     min-height: 100vh;
     box-sizing: border-box;
+    font-size: 1.2em; /* 모든 텍스트 크기 동일하게 설정 */
 }
 
 .container {
     max-width: 800px;
-    padding: 20px;
+    padding: 0; /* 패딩 제거하여 왼쪽 정렬 */
     line-height: 1.6;
+    text-align: left; /* 텍스트 왼쪽 정렬 */
 }
 
-.title {
-    font-family: 'Galmuri11-Condensed', sans-serif;
-    font-size: 2.5em;
-    text-align: center;
-    margin-bottom: 20px;
-    font-weight: bold; /* 제목은 좀 더 강조 */
+p {
+    margin-bottom: 0.5em; /* 단락 사이 간격 조절 */
 }
 
-.description, .deck-info {
-    font-family: 'Galmuri9', sans-serif; /* 이 부분은 Galmuri9 폰트 적용 */
-    font-size: 1.1em;
-    margin-bottom: 1em;
-}
-
-.difficulty {
-    font-family: 'Galmuri11-Condensed', sans-serif; /* 난이도는 기본 폰트 */
-    font-size: 1.2em;
-    margin-top: 20px;
-    margin-bottom: 1em;
-}
-
-.rules-heading {
-    font-family: 'Galmuri11-Condensed', sans-serif; /* '규칙:' 부분도 기본 폰트 */
-    font-size: 1.8em;
-    margin-top: 30px;
-    margin-bottom: 15px;
-    font-weight: bold; /* '규칙:'도 강조 */
-}
-
-.rules-list {
-    list-style-type: disc;
-    margin-left: 20px;
-    font-family: 'Galmuri11-Condensed', sans-serif; /* 규칙 목록은 기본 폰트 */
-}
-
-.rules-list li {
-    margin-bottom: 10px;
+.galmuri9-font {
+    font-family: 'Galmuri9', sans-serif; /* 특정 부분 Galmuri9 폰트 적용 */
 }
