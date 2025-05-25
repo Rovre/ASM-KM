@@ -81,32 +81,24 @@ body {
 }
 
 .rules-container {
-    /* 기존 틀박스 스타일 제거 */
-    /* background-color: #282a36; */
-    /* border: 1px solid #44475a; */
-    /* padding: 30px; */
-    /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); */
-    /* border-radius: 5px; */
-
     width: 100%;
     box-sizing: border-box;
-    font-family: 'Galmuri9', sans-serif; /* 규칙 섹션 폰트 */
-    padding-top: 0; /* 상단 내용과 분리되었으므로 패딩 제거 */
-    padding-bottom: 0; /* 상단 내용과 분리되었으므로 패딩 제거 */
+    font-family: 'Galmuri9', sans-serif;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .rules-header {
-    /* 상단 섹션과 동일하게 여백 조절 */
-    display: block; /* flex 대신 블록으로 변경 */
-    margin-bottom: 20px; /* 기존과 동일 */
-    text-align: left; /* 제목 정렬 */
+    display: block;
+    margin-bottom: 20px;
+    text-align: left;
 }
 
 .rules-title {
-    font-size: 1.8em; /* 난이도와 유사한 크기 */
-    color: #f8f8f2; /* 흰색 계열 */
-    margin: 0; /* 기본 마진 제거 */
-    font-family: 'Galmuri11-Condensed', sans-serif; /* RULES: 제목 폰트 유지 */
+    font-size: 1.8em;
+    color: #f8f8f2;
+    margin: 0;
+    font-family: 'Galmuri11-Condensed', sans-serif;
 }
 
 .rules-list {
@@ -116,15 +108,20 @@ body {
 }
 
 .rules-list li {
-    margin-bottom: 15px; /* 각 항목 간의 간격 */
-    font-size: 1.1em; /* 일반 설명 텍스트와 동일한 크기 */
+    margin-bottom: 15px;
+    font-size: 1.1em;
     line-height: 1.6;
-    color: #E0E0E0; /* 상단 설명 텍스트와 동일한 색상 */
+    color: #E0E0E0;
 }
 
-/* eb8ede 강조색 */
-.highlight-eb8ede-1,
-.highlight-eb8ede-2 {
+/* eb8ede 강조색 (기존 핑크색/노란색) */
+.highlight-eb8ede {
     color: #eb8ede;
+    font-weight: bold;
+}
+
+/* e3c188 강조색 (새로운 색상) */
+.highlight-e3c188 {
+    color: #e3c188;
     font-weight: bold;
 }
