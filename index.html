@@ -7,50 +7,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="game-list-container">
-        <h1 class="main-title">솔리테어 게임 목록</h1>
-
-        <div class="game-section">
-            <h2 class="game-title">혼돈의 솔리테어</h2>
-            <p class="game-intro">매 이동 후마다 카드가 반쯤 무작위로 이리저리 움직이지만, 그 외 규칙은 꽤 너그러운 솔리테어 게임입니다. 결과는... 뭐, 그렇지만 약간의 추리 논리도 필요합니다!</p>
-            <p class="difficulty">난이도:<span class="difficulty-star"> ★----</span></p>
-            <p class="game-info-playable">일반 카드 덱으로 플레이 가능: <span class="game-info-value">아니요</span></p>
-
-            <div class="rules-section-divider"></div>
-
-            <div class="rules-container">
-                <div class="rules-header">
-                    <h3 class="rules-title">규칙:</h3>
-                </div>
-                <ul class="rules-list">
-                    <li>- 모든 무늬의 카드를 <span class="highlight-eb8ede">오른쪽 슬롯</span>에 <span class="highlight-e3c188">오름차순</span>으로 쌓으세요.</li>
-                    <li>- 다른 색깔 무늬끼리 <span class="highlight-e3c188">내림차순</span>으로 카드를 쌓거나 옮길 수 있습니다. <span class="highlight-e3c188">내림차순</span>이기만 하면 <span class="highlight-e3c188">카드 숫자가 반드시 이어질 필요는 없으며,</span> 따라서 7-4-3도 유효한 더미입니다.</li>
-                    <li>- 왼쪽 더미들 사이에서 카드를 옮길 때마다, (가능하다면) 그 카드는 다른 더미 중 하나의 <span class="highlight-e3c188">맨 위 카드</span>와 <span class="highlight-eb8ede">무작위로 자리를 바꿉니다</span>. 카드 더미를 옮길 때는 <span class="highlight-eb8ede">맨 위 카드</span>만 교체됩니다.</li>
-                    <li>- <span class="highlight-e3c188">S</span> 키를 누르면 자동으로 쌓입니다.</li>
-                </ul>
+    <div class="list-container">
+        <h1 class="list-title">솔리테어 게임</h1>
+        <div class="game-buttons-container">
+            <a href="chaotic.html" class="game-button">혼돈의 솔리테어</a>
+            <a href="hanoi.html" class="game-button">하노이 솔리테어</a>
             </div>
-        </div>
-
-        <div class="main-section-divider"></div> <div class="game-section">
-            <h2 class="game-title">하노이 솔리테어</h2>
-            <p class="game-intro">고전 하노이의 탑 퍼즐을 연상시키는 논리를 사용하여 카드와 카드 더미를 옮기는 솔리테어 게임입니다.</p>
-            <p class="difficulty">난이도:<span class="difficulty-star"> ★----</span></p>
-            <p class="game-info-playable">일반 카드 덱으로 플레이 가능: <span class="game-info-value">예</span></p>
-
-            <div class="rules-section-divider"></div>
-
-            <div class="rules-container">
-                <div class="rules-header">
-                    <h3 class="rules-title">규칙:</h3>
-                </div>
-                <ul class="rules-list">
-                    <li>- <span class="highlight-e3c188">K가 맨 위, A가 맨 아래에 오도록 내림차순으로 이어지는 4개의 더미</span>를 만드세요.</li>
-                    <li>- 카드는 <span class="highlight-e3c188">위에서 아래로 숫자가 큰 것에서 작은 것으로 내려가는 순서(내림차순)</span>로 쌓을 수 있으며, 이렇게 쌓인 더미는 옮길 수 있습니다. <span class="highlight-eb8ede">같은 무늬의 카드를 내림차순으로 쌓을 때는 카드 숫자가 반드시 이어지지 않아도 됩니다</span>. 따라서 <span class="highlight-eb8ede">7D-4D-3H</span>는 (맨 위가 7D, 맨 아래가 3H인) 유효한 더미입니다.</li>
-                    <li>- <span class="highlight-e3c188">슬롯은 3x2 격자 형태</span>입니다. 카드나 더미를 옮길 때, 격자 위에서 <span class="highlight-e3c188">한 번에 한 슬롯씩 이동</span>합니다. <span class="highlight-eb8ede">옮기려는 카드(단일 카드일 경우) 또는 옮기려는 더미의 맨 아래 카드보다, 놓으려는 대상 슬롯의 맨 위 카드의 숫자가 더 클 경우에만 해당 슬롯으로 카드나 더미를 옮길 수 있습니다</span>.</li>
-                </ul>
-            </div>
-        </div>
-
     </div>
 </body>
 </html>
