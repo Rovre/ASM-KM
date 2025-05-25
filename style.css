@@ -1,32 +1,17 @@
-/* 기존 style.css 내용 아래에 추가 */
+/* 기존 style.css 내용 아래에 추가 또는 기존 .game-description-container 수정 */
 
-.button-container {
-    margin-top: 30px; /* 위쪽 여백 */
-    text-align: center; /* 버튼을 중앙 정렬 (필요시) */
-}
-
-.rules-button {
-    display: inline-block; /* 버튼처럼 보이게 하기 위해 */
-    padding: 12px 25px;
-    background-color: #c56f68; /* CHAOTIC SOLITAIRE 제목과 유사한 색상 */
-    color: #f8f8f2; /* 흰색 텍스트 */
-    text-decoration: none; /* 밑줄 제거 */
-    border: none;
-    border-radius: 5px;
+.game-description-container {
+    max-width: 800px;
+    text-align: left;
+    line-height: 1.5;
+    color: #E0E0E0;
     font-size: 1.1em;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease; /* 부드러운 전환 효과 */
-    font-family: 'Galmuri11-Condensed', sans-serif; /* 폰트 적용 (필요시) */
-    letter-spacing: 0.5px;
+    
+    /* 새로 추가된 줄바꿈 속성 */
+    word-break: keep-all; /* 한글 단어 단위로 줄바꿈 유지 */
+    overflow-wrap: break-word; /* 긴 단어는 강제로 줄바꿈 (영어 단어 등) */
 }
 
-.rules-button:hover {
-    background-color: #a75b56; /* 호버 시 색상 변경 */
-    color: #fff;
-}
-
-
-/* --- 기존 style.css 내용 --- */
 /* 폰트 파일 정의 */
 @font-face {
     font-family: 'Galmuri11-Condensed';
@@ -53,13 +38,6 @@ body {
     box-sizing: border-box;
 }
 
-.game-description-container {
-    max-width: 800px;
-    text-align: left;
-    line-height: 1.5;
-    color: #E0E0E0;
-    font-size: 1.1em;
-}
 
 .game-title {
     font-family: 'Galmuri11-Condensed', sans-serif;
