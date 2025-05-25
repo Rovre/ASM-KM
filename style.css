@@ -36,43 +36,43 @@ body {
 }
 
 .game-title {
-    font-family: 'Galmuri9', sans-serif; /* Galmuri9 폰트 유지*/
-    color: #c56f68; /* 색상 유지*/
-    font-size: 2.2em; /* '혼돈의 솔리테어' 제목 크기 유지*/
+    font-family: 'Galmuri11-Condensed', sans-serif; /* Galmuri11-Condensed 폰트로 변경 */
+    color: #c56f68;
+    font-size: 2.2em; /* '혼돈의 솔리테어' 제목 크기 유지 */
     margin-bottom: 20px;
     letter-spacing: 1px;
     margin-top: 0;
 }
 
 .game-intro {
-    font-family: 'Galmuri9', sans-serif; /* Galmuri9 폰트 유지*/
-    color: white; /* 색상 유지*/
-    font-size: 1.1em; /* 1.1em 크기 유지*/
+    font-family: 'Galmuri9', sans-serif;
+    color: white;
+    font-size: 1.1em;
     margin-bottom: 30px;
 }
 
 .difficulty {
-    font-family: 'Galmuri9', sans-serif; /* Galmuri9 폰트 유지*/
-    color: #c56f68; /* 색상 유지*/
-    font-size: 1.8em; /* '난이도: ★----' 크기 유지*/
+    font-family: 'Galmuri11-Condensed', sans-serif; /* Galmuri11-Condensed 폰트로 변경 */
+    color: #c56f68;
+    font-size: 1.8em; /* '난이도: ★----' 크기 유지 */
     margin-bottom: 20px;
     letter-spacing: 1px;
 }
 
 .difficulty-star {
-    color: #ffce4d; /* 색상 유지*/
+    color: #ffce4d;
 }
 
 .game-info-playable {
-    font-family: 'Galmuri9', sans-serif; /* Galmuri9 폰트 유지*/
-    color: #c56f68; /* 색상 유지*/
-    font-size: 1.1em; /* 1.1em 크기 유지*/
+    font-family: 'Galmuri9', sans-serif;
+    color: #c56f68;
+    font-size: 1.1em;
     margin-bottom: 5px;
 }
 
 .game-info-value {
-    font-family: 'Galmuri9', sans-serif; /* Galmuri9 폰트 유지*/
-    color: #ffa32a; /* 색상 유지*/
+    font-family: 'Galmuri9', sans-serif;
+    color: #ffa32a;
 }
 
 /* --- 규칙 설명서 섹션 스타일 --- */
@@ -84,8 +84,7 @@ body {
 .rules-container {
     width: 100%;
     box-sizing: border-box;
-    /* rules-list와 li에 개별적으로 폰트 지정할 것이므로 여기서 제거 */
-    /* font-family: 'Galmuri9', sans-serif; */
+    font-family: 'Galmuri9', sans-serif; /* 규칙 본문 폰트는 Galmuri9 유지 */
     padding-top: 0;
     padding-bottom: 0;
 }
@@ -97,22 +96,22 @@ body {
 }
 
 .rules-title {
-    font-size: 1.8em; /* '규칙:' 제목 크기 확대 (난이도와 유사하게) */
+    font-size: 1.8em; /* '규칙:' 제목 크기 확대 (난이도와 동일) */
     color: #f8f8f2;
     margin: 0;
-    font-family: 'Galmuri11-Condensed', sans-serif; /* '규칙:' 제목 폰트 Galmuri11-Condensed로 변경 */
+    font-family: 'Galmuri11-Condensed', sans-serif; /* Galmuri11-Condensed 폰트로 변경 */
 }
 
 .rules-list {
     list-style: none;
     padding: 0;
     margin: 0;
-    font-family: 'Galmuri9', sans-serif; /* 규칙 본문 폰트 Galmuri9으로 유지 */
+    font-family: 'Galmuri9', sans-serif; /* 규칙 본문 폰트는 Galmuri9 유지 */
 }
 
 .rules-list li {
     margin-bottom: 15px;
-    font-size: 1.1em; /* 1.1em 크기 유지*/
+    font-size: 1.1em;
     line-height: 1.6;
     color: #E0E0E0;
 }
