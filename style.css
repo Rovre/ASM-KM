@@ -202,3 +202,9 @@ body {
     border-color: #f8f8f2;
     color: #fff;
 }
+
+/* 57a3c9 강조색 */
+.highlight-57a3c9 {
+    color: #57a3c9;
+    font-weight: bold; /* 필요하다면 굵게 표시 */
+}
