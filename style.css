@@ -1,4 +1,6 @@
 /* 폰트 파일 정의 */
+/* Galmuri11-Condensed는 더 이상 사용되지 않으므로 제거하거나 주석 처리할 수 있습니다. */
+/* 하지만 혹시 다른 곳에서 사용될 수도 있으니 일단 유지하되, font-family에서는 Galmuri9만 사용합니다. */
 @font-face {
     font-family: 'Galmuri11-Condensed';
     src: url('fonts/Galmuri11-Condensed.ttf') format('truetype');
@@ -22,38 +24,44 @@ body {
     align-items: flex-start;
     min-height: 100vh;
     box-sizing: border-box;
+    font-family: 'Galmuri9', sans-serif; /* 모든 텍스트의 기본 폰트를 Galmuri9으로 설정 */
+    font-size: 1.1em; /* 모든 텍스트의 기본 크기를 1.1em으로 설정 */
+    color: #E0E0E0; /* 기본 텍스트 색상 */
+    line-height: 1.5; /* 기본 줄 간격 */
+    word-break: keep-all; /* 한글 단어 단위 줄바꿈 */
+    overflow-wrap: break-word; /* 긴 단어 줄바꿈 */
 }
 
 .game-description-container {
     max-width: 800px;
     text-align: left;
-    line-height: 1.5;
-    color: #E0E0E0;
-    font-size: 1.1em; /* 기본 텍스트 크기 */
-    word-break: keep-all;
-    overflow-wrap: break-word;
+    /* 폰트 관련 속성은 body에서 상속받으므로 여기서 제거 */
+    /* color: #E0E0E0; */
+    /* font-size: 1.1em; */
+    /* word-break: keep-all; */
+    /* overflow-wrap: break-word; */
 }
 
 .game-title {
-    font-family: 'Galmuri11-Condensed', sans-serif;
+    font-family: 'Galmuri9', sans-serif; /* Galmuri9으로 변경 */
     color: #c56f68;
-    font-size: 2.2em;
+    font-size: 1.1em; /* 1.1em으로 통일 */
     margin-bottom: 20px;
     letter-spacing: 1px;
     margin-top: 0;
 }
 
 .game-intro {
-    font-family: 'Galmuri9', sans-serif;
+    font-family: 'Galmuri9', sans-serif; /* Galmuri9으로 변경 */
     color: white;
-    font-size: 1.1em; /* 다른 평균적인 텍스트 크기 */
+    font-size: 1.1em; /* 1.1em으로 통일 */
     margin-bottom: 30px;
 }
 
 .difficulty {
-    font-family: 'Galmuri11-Condensed', sans-serif;
+    font-family: 'Galmuri9', sans-serif; /* Galmuri9으로 변경 */
     color: #c56f68;
-    font-size: 1.8em;
+    font-size: 1.1em; /* 1.1em으로 통일 */
     margin-bottom: 20px;
     letter-spacing: 1px;
 }
@@ -63,14 +71,14 @@ body {
 }
 
 .game-info-playable {
-    font-family: 'Galmuri9', sans-serif;
+    font-family: 'Galmuri9', sans-serif; /* Galmuri9으로 변경 */
     color: #c56f68;
-    font-size: 1.1em; /* 다른 평균적인 텍스트 크기 */
+    font-size: 1.1em; /* 1.1em으로 통일 */
     margin-bottom: 5px;
 }
 
 .game-info-value {
-    font-family: 'Galmuri9', sans-serif;
+    font-family: 'Galmuri9', sans-serif; /* Galmuri9으로 변경 */
     color: #ffa32a;
 }
 
@@ -83,7 +91,7 @@ body {
 .rules-container {
     width: 100%;
     box-sizing: border-box;
-    font-family: 'Galmuri9', sans-serif;
+    font-family: 'Galmuri9', sans-serif; /* Galmuri9으로 변경 */
     padding-top: 0;
     padding-bottom: 0;
 }
@@ -95,22 +103,22 @@ body {
 }
 
 .rules-title {
-    font-size: 1.8em;
+    font-size: 1.1em; /* 1.1em으로 통일 */
     color: #f8f8f2;
     margin: 0;
-    font-family: 'Galmuri11-Condensed', sans-serif;
+    font-family: 'Galmuri9', sans-serif; /* Galmuri9으로 변경 */
 }
 
 .rules-list {
     list-style: none;
     padding: 0;
     margin: 0;
-    font-family: 'Galmuri11-Condensed', sans-serif; /* 규칙 본문 폰트 변경*/
+    font-family: 'Galmuri9', sans-serif; /* Galmuri9으로 변경 */
 }
 
 .rules-list li {
     margin-bottom: 15px;
-    font-size: 1.8em; /* 다른 평균적인 텍스트와 동일한 크기로 설정 */
+    font-size: 1.1em; /* 1.1em으로 통일 */
     line-height: 1.6;
     color: #E0E0E0;
 }
