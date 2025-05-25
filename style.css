@@ -22,41 +22,63 @@ body {
     align-items: flex-start;
     min-height: 100vh;
     box-sizing: border-box;
-    font-family: 'Galmuri9', sans-serif;
-    font-size: 1.1em;
-    color: #E0E0E0;
-    line-height: 1.5;
-    word-break: keep-all;
-    overflow-wrap: break-word;
+    font-family: 'Galmuri9', sans-serif; /* 모든 텍스트의 기본 폰트를 Galmuri9으로 설정 */
+    font-size: 1.1em; /* 모든 텍스트의 기본 크기를 1.1em으로 설정 */
+    color: #E0E0E0; /* 기본 텍스트 색상 */
+    line-height: 1.5; /* 기본 줄 간격 */
+    word-break: keep-all; /* 한글 단어 단위 줄바꿈 */
+    overflow-wrap: break-word; /* 긴 단어 줄바꿈 */
 }
 
-/* 전체 게임 목록 컨테이너 */
-.game-list-container {
+/* --- 목록 페이지 스타일 (index.html) --- */
+.list-container {
     max-width: 800px;
-    text-align: left;
-    width: 100%; /* 너비를 꽉 채우도록 설정 */
+    text-align: center; /* 버튼을 중앙 정렬하기 위해 */
+    padding-top: 50px; /* 상단 여백 */
 }
 
-.main-title {
+.list-title {
     font-family: 'Galmuri11-Condensed', sans-serif;
     color: #c56f68;
-    font-size: 2.5em; /* 메인 제목 크기 */
-    margin-bottom: 40px;
-    letter-spacing: 1px;
-    text-align: center; /* 중앙 정렬 */
+    font-size: 2.5em; /* 목록 페이지 제목은 더 크게 */
+    margin-bottom: 50px;
+    letter-spacing: 2px;
 }
 
-/* 각 게임 섹션 */
-.game-section {
-    margin-bottom: 60px; /* 각 게임 섹션 하단 여백 */
-    padding-bottom: 20px; /* 섹션 내 여백 */
-    /* border-bottom: 1px solid #44475a;  필요시 각 게임 섹션 하단에 구분선 */
+.game-buttons-container {
+    display: flex;
+    flex-direction: column; /* 버튼을 세로로 나열 */
+    gap: 20px; /* 버튼 간 간격 */
+    align-items: center; /* 가로 중앙 정렬 */
 }
 
-/* 마지막 게임 섹션에는 하단 여백이나 구분선 불필요 */
-.game-section:last-child {
-    margin-bottom: 0;
-    border-bottom: none;
+.game-button {
+    display: block; /* 블록 요소로 만들어 너비 전체를 차지하고 마진을 잘 받도록 */
+    width: 300px; /* 버튼 너비 고정 */
+    padding: 15px 30px;
+    background-color: #44475a;
+    color: #f8f8f2;
+    text-decoration: none;
+    border: 2px solid #6272a4;
+    border-radius: 5px;
+    font-family: 'Galmuri11-Condensed', sans-serif; /* 버튼 폰트도 Galmuri11-Condensed로 */
+    font-size: 1.5em; /* 버튼 텍스트 크기 */
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+    text-align: center;
+}
+
+.game-button:hover {
+    background-color: #6272a4;
+    border-color: #f8f8f2;
+    color: #fff;
+}
+
+
+/* --- 개별 게임 페이지 스타일 (chaotic.html, hanoi.html) --- */
+.game-description-container {
+    max-width: 800px;
+    text-align: left;
 }
 
 .game-title {
@@ -101,14 +123,7 @@ body {
     color: #ffa32a;
 }
 
-/* --- 메인 섹션 간 구분선 (게임 섹션 간의 구분) --- */
-.main-section-divider {
-    border-top: 2px solid #44475a; /* 더 굵은 구분선 */
-    margin: 60px 0; /* 위아래 여백을 더 크게 */
-}
-
-
-/* --- 규칙 설명서 섹션 스타일 (기존과 동일) --- */
+/* --- 규칙 설명서 섹션 스타일 --- */
 .rules-section-divider {
     border-top: 1px solid #44475a;
     margin: 40px 0;
@@ -128,7 +143,6 @@ body {
     text-align: left;
 }
 
-/* 규칙 제목 (예: "규칙:") */
 .rules-title {
     font-size: 1.8em;
     color: #f8f8f2;
@@ -151,13 +165,40 @@ body {
     color: #E0E0E0;
 }
 
-/* 강조색 */
+/* eb8ede 강조색 */
 .highlight-eb8ede {
     color: #eb8ede;
     font-weight: bold;
 }
 
+/* e3c188 강조색 */
 .highlight-e3c188 {
     color: #e3c188;
     font-weight: bold;
+}
+
+/* --- 목록으로 돌아가기 버튼 스타일 (각 게임 페이지) --- */
+.back-to-list-container {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333642; /* 목록 페이지 버튼보다 조금 더 어둡게 */
+    color: #f8f8f2;
+    text-decoration: none;
+    border: 1px solid #44475a;
+    border-radius: 5px;
+    font-family: 'Galmuri9', sans-serif;
+    font-size: 1em; /* 목록 버튼보다 약간 작게 */
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.back-button:hover {
+    background-color: #44475a;
+    border-color: #f8f8f2;
+    color: #fff;
 }
