@@ -38,7 +38,7 @@ body {
 .game-title {
     font-family: 'Galmuri9', sans-serif; /* Galmuri9 폰트 유지*/
     color: #c56f68; /* 색상 유지*/
-    font-size: 2.2em; /* '혼돈의 솔리테어' 제목 크기 확대*/
+    font-size: 2.2em; /* '혼돈의 솔리테어' 제목 크기 유지*/
     margin-bottom: 20px;
     letter-spacing: 1px;
     margin-top: 0;
@@ -54,7 +54,7 @@ body {
 .difficulty {
     font-family: 'Galmuri9', sans-serif; /* Galmuri9 폰트 유지*/
     color: #c56f68; /* 색상 유지*/
-    font-size: 1.8em; /* '난이도: ★----' 크기 확대*/
+    font-size: 1.8em; /* '난이도: ★----' 크기 유지*/
     margin-bottom: 20px;
     letter-spacing: 1px;
 }
@@ -84,7 +84,8 @@ body {
 .rules-container {
     width: 100%;
     box-sizing: border-box;
-    font-family: 'Galmuri9', sans-serif; /* Galmuri9 폰트 유지*/
+    /* rules-list와 li에 개별적으로 폰트 지정할 것이므로 여기서 제거 */
+    /* font-family: 'Galmuri9', sans-serif; */
     padding-top: 0;
     padding-bottom: 0;
 }
@@ -96,17 +97,17 @@ body {
 }
 
 .rules-title {
-    font-size: 1.1em; /* 규칙 제목은 1.1em 유지 (메인 제목과 구분)*/
+    font-size: 1.8em; /* '규칙:' 제목 크기 확대 (난이도와 유사하게) */
     color: #f8f8f2;
     margin: 0;
-    font-family: 'Galmuri9', sans-serif; /* Galmuri9 폰트 유지*/
+    font-family: 'Galmuri11-Condensed', sans-serif; /* '규칙:' 제목 폰트 Galmuri11-Condensed로 변경 */
 }
 
 .rules-list {
     list-style: none;
     padding: 0;
     margin: 0;
-    font-family: 'Galmuri9', sans-serif; /* Galmuri9 폰트 유지*/
+    font-family: 'Galmuri9', sans-serif; /* 규칙 본문 폰트 Galmuri9으로 유지 */
 }
 
 .rules-list li {
