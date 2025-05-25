@@ -29,7 +29,7 @@ body {
     text-align: left;
     line-height: 1.5;
     color: #E0E0E0;
-    font-size: 1.1em;
+    font-size: 1.1em; /* 기본 텍스트 크기 */
     word-break: keep-all;
     overflow-wrap: break-word;
 }
@@ -46,7 +46,7 @@ body {
 .game-intro {
     font-family: 'Galmuri9', sans-serif;
     color: white;
-    font-size: 1.1em;
+    font-size: 1.1em; /* 다른 평균적인 텍스트 크기 */
     margin-bottom: 30px;
 }
 
@@ -65,7 +65,7 @@ body {
 .game-info-playable {
     font-family: 'Galmuri9', sans-serif;
     color: #c56f68;
-    font-size: 1.1em;
+    font-size: 1.1em; /* 다른 평균적인 텍스트 크기 */
     margin-bottom: 5px;
 }
 
@@ -105,23 +105,23 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
-    font-family: 'Galmuri11-Condensed', sans-serif;
+    font-family: 'Galmuri11-Condensed', sans-serif; /* 규칙 본문 폰트 변경*/
 }
 
 .rules-list li {
     margin-bottom: 15px;
-    font-size: 1.1em;
+    font-size: 1.1em; /* 다른 평균적인 텍스트와 동일한 크기로 설정 */
     line-height: 1.6;
     color: #E0E0E0;
 }
 
-/* eb8ede 강조색 (기존 핑크색/노란색) */
+/* eb8ede 강조색 */
 .highlight-eb8ede {
     color: #eb8ede;
     font-weight: bold;
 }
 
-/* e3c188 강조색 (새로운 색상) */
+/* e3c188 강조색 */
 .highlight-e3c188 {
     color: #e3c188;
     font-weight: bold;
