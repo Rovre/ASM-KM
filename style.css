@@ -83,7 +83,7 @@ body {
 
 .game-title {
     font-family: 'Galmuri11-Condensed', sans-serif;
-    color: #c56f68;
+    color: #c56f68; /* 이 색상은 이제 hanoi.html에서는 .highlight-57a3c9로 오버라이드될 수 있음 */
     font-size: 2.2em;
     margin-bottom: 20px;
     letter-spacing: 1px;
@@ -100,7 +100,7 @@ body {
 
 .difficulty {
     font-family: 'Galmuri11-Condensed', sans-serif;
-    color: #c56f68;
+    color: #c56f68; /* 이 색상은 이제 hanoi.html에서는 .highlight-57a3c9로 오버라이드될 수 있음 */
     font-size: 1.8em;
     margin-bottom: 20px;
     letter-spacing: 1px;
@@ -113,14 +113,14 @@ body {
 
 .game-info-playable {
     font-family: 'Galmuri9', sans-serif;
-    color: #c56f68;
+    color: #c56f68; /* 이 색상은 이제 hanoi.html에서는 .highlight-57a3c9로 오버라이드될 수 있음 */
     font-size: 1.1em;
     margin-bottom: 5px;
 }
 
 .game-info-value {
     font-family: 'Galmuri9', sans-serif;
-    color: #ffa32a;
+    color: #ffa32a; /* 이 색상은 이제 hanoi.html에서는 .highlight-a7d962로 오버라이드될 수 있음 */
 }
 
 /* --- 규칙 설명서 섹션 스타일 --- */
@@ -165,15 +165,27 @@ body {
     color: #E0E0E0;
 }
 
-/* eb8ede 강조색 */
+/* 기존 강조색 */
 .highlight-eb8ede {
     color: #eb8ede;
     font-weight: bold;
 }
 
-/* e3c188 강조색 */
+/* 기존 강조색 */
 .highlight-e3c188 {
     color: #e3c188;
+    font-weight: bold;
+}
+
+/* 새로운 강조색: 57a3c9 */
+.highlight-57a3c9 {
+    color: #57a3c9 !important; /* !important를 사용하여 다른 스타일보다 우선순위 높임 */
+    font-weight: bold;
+}
+
+/* 새로운 강조색: a7d962 */
+.highlight-a7d962 {
+    color: #a7d962 !important; /* !important를 사용하여 다른 스타일보다 우선순위 높임 */
     font-weight: bold;
 }
 
@@ -186,13 +198,13 @@ body {
 .back-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #333642; /* 목록 페이지 버튼보다 조금 더 어둡게 */
+    background-color: #333642;
     color: #f8f8f2;
     text-decoration: none;
     border: 1px solid #44475a;
     border-radius: 5px;
     font-family: 'Galmuri9', sans-serif;
-    font-size: 1em; /* 목록 버튼보다 약간 작게 */
+    font-size: 1em;
     cursor: pointer;
     transition: background-color 0.2s, border-color 0.2s, color 0.2s;
 }
@@ -201,10 +213,4 @@ body {
     background-color: #44475a;
     border-color: #f8f8f2;
     color: #fff;
-}
-
-/* 57a3c9 강조색 */
-.highlight-57a3c9 {
-    color: #57a3c9;
-    font-weight: bold; /* 필요하다면 굵게 표시 */
 }
