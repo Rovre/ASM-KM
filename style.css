@@ -1,0 +1,53 @@
+body {
+    background-color: #000; /* 어두운 배경색 */
+    color: #E0E0E0; /* 밝은 회색 계열 텍스트 색상 (이미지와 유사) */
+    font-family: 'Courier New', Courier, monospace; /* 고정폭 폰트 (이미지 폰트와 유사) */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* 상단 정렬 */
+    min-height: 100vh; /* 뷰포트 높이의 최소 100% */
+    margin: 0;
+    padding: 20px; /* 약간의 여백 추가 */
+    box-sizing: border-box;
+}
+
+.game-description-container {
+    max-width: 800px; /* 내용의 최대 너비 설정 */
+    text-align: left;
+    line-height: 1.5; /* 줄 간격 설정 */
+}
+
+.game-title {
+    color: #FFD700; /* 금색 계열 (이미지 제목과 유사) */
+    font-size: 2.5em; /* 제목 크기 */
+    margin-bottom: 20px;
+    letter-spacing: 2px; /* 자간 조절 */
+}
+
+.game-intro {
+    font-size: 1.1em; /* 본문 내용 크기 */
+    margin-bottom: 30px;
+}
+
+.difficulty-label {
+    color: #FFD700; /* 금색 계열 */
+    font-size: 1.8em; /* 난이도 제목 크기 */
+    margin-bottom: 10px;
+    letter-spacing: 1.5px; /* 자간 조절 */
+}
+
+.difficulty-rating {
+    font-size: 1.3em; /* 난이도 별표 크기 */
+    color: #FF4500; /* 주황색 계열 (별표에 사용) */
+    margin-bottom: 20px;
+}
+
+.game-info {
+    font-size: 1em; /* 기타 정보 크기 */
+    margin-bottom: 5px;
+}
+
+.info-value {
+    color: #ADD8E6; /* 밝은 파란색 계열 (정보 값에 사용) */
+    font-weight: bold;
+}
