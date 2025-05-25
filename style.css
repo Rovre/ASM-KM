@@ -1,72 +1,102 @@
-/* 이전에 제공된 main page 스타일 (game-description-container 등)은 여기에 포함되지 않습니다. */
-/* rules.html에 대한 스타일입니다. */
+/* 기존 style.css 내용 아래에 추가 */
+
+.button-container {
+    margin-top: 30px; /* 위쪽 여백 */
+    text-align: center; /* 버튼을 중앙 정렬 (필요시) */
+}
+
+.rules-button {
+    display: inline-block; /* 버튼처럼 보이게 하기 위해 */
+    padding: 12px 25px;
+    background-color: #c56f68; /* CHAOTIC SOLITAIRE 제목과 유사한 색상 */
+    color: #f8f8f2; /* 흰색 텍스트 */
+    text-decoration: none; /* 밑줄 제거 */
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* 부드러운 전환 효과 */
+    font-family: 'Galmuri11-Condensed', sans-serif; /* 폰트 적용 (필요시) */
+    letter-spacing: 0.5px;
+}
+
+.rules-button:hover {
+    background-color: #a75b56; /* 호버 시 색상 변경 */
+    color: #fff;
+}
+
+
+/* --- 기존 style.css 내용 --- */
+/* 폰트 파일 정의 */
+@font-face {
+    font-family: 'Galmuri11-Condensed';
+    src: url('fonts/Galmuri11-Condensed.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Galmuri9';
+    src: url('fonts/Galmuri9.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 body {
-    background-color: #282a36; /* 이미지 배경과 유사한 어두운 파란색 */
-    color: #f8f8f2; /* 기본 텍스트 색상 (밝은 회색) */
-    font-family: 'Courier New', Courier, monospace; /* 임시 폰트 - 실제 폰트 적용 시 변경될 것임 */
-    display: flex;
-    justify-content: center;
-    align-items: center; /* 가운데 정렬 */
-    min-height: 100vh; /* 뷰포트 높이의 최소 100% */
+    background-color: #000;
     margin: 0;
     padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
     box-sizing: border-box;
 }
 
-.rules-container {
-    background-color: #282a36; /* 배경과 동일한 색상 (이미지에서는 불투명한 검은색 박스처럼 보임) */
-    border: 1px solid #44475a; /* 테두리 */
-    padding: 30px;
-    max-width: 700px;
-    width: 100%;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* 그림자 효과 */
-    border-radius: 5px;
-}
-
-.rules-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.rules-title {
-    font-size: 1.8em;
-    color: #f8f8f2; /* 흰색 계열 */
-    margin: 0;
-}
-
-.close-button {
-    background-color: transparent;
-    border: 2px solid #f8f8f2; /* 흰색 테두리 */
-    color: #f8f8f2; /* 흰색 X */
-    font-size: 1.2em;
-    font-weight: bold;
-    padding: 5px 10px;
-    cursor: pointer;
-    border-radius: 3px;
-    transition: background-color 0.2s, color 0.2s;
-}
-
-.close-button:hover {
-    background-color: #f8f8f2;
-    color: #282a36;
-}
-
-.rules-list {
-    list-style: none; /* 기본 리스트 스타일 제거 */
-    padding: 0;
-    margin: 0;
-}
-
-.rules-list li {
-    margin-bottom: 15px;
+.game-description-container {
+    max-width: 800px;
+    text-align: left;
+    line-height: 1.5;
+    color: #E0E0E0;
     font-size: 1.1em;
-    line-height: 1.6;
 }
 
-.highlight {
-    color: #eb8ede; /* 핑크색/노란색 (모두 eb8ede) */
-    font-weight: bold; /* 강조를 위해 볼드 처리 */
+.game-title {
+    font-family: 'Galmuri11-Condensed', sans-serif;
+    color: #c56f68;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    margin-top: 0;
+}
+
+.game-intro {
+    font-family: 'Galmuri9', sans-serif;
+    color: white;
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+.difficulty {
+    font-family: 'Galmuri11-Condensed', sans-serif;
+    color: #c56f68;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.difficulty-star {
+    color: #ffce4d;
+}
+
+.game-info-playable {
+    font-family: 'Galmuri9', sans-serif;
+    color: #c56f68;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+.game-info-value {
+    font-family: 'Galmuri9', sans-serif;
+    color: #ffa32a;
 }
