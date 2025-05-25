@@ -110,7 +110,7 @@ body {
 
 .rules-list li {
     margin-bottom: 15px;
-    font-size: 1.1em; /* 다른 평균적인 텍스트와 동일한 크기로 설정 */
+    font-size: 1.8em; /* 다른 평균적인 텍스트와 동일한 크기로 설정 */
     line-height: 1.6;
     color: #E0E0E0;
 }
