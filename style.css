@@ -1,126 +1,32 @@
-/* style.css는 이전 응답과 동일합니다. (텍스트 내용만 변경되므로 CSS는 수정할 필요 없음) */
-/* 폰트 파일 정의 */
-@font-face {
-    font-family: 'Galmuri11-Condensed';
-    src: url('fonts/Galmuri11-Condensed.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaotic Solitaire</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-description-container">
+        <h1 class="game-title">혼돈의 솔리테어</h1>
+        <p class="game-intro">매 이동 후마다 카드가 반쯤 무작위로 이리저리 움직이지만, 그 외 규칙은 꽤 너그러운 솔리테어 게임입니다. 결과는... 뭐, 그렇지만 약간의 추리 논리도 필요합니다!</p>
+        <p class="difficulty">난이도:<span class="difficulty-star"> ★----</span></p>
+        <p class="game-info-playable">일반 카드 덱으로 플레이 가능: <span class="game-info-value">아니요</span></p>
 
-@font-face {
-    font-family: 'Galmuri9';
-    src: url('fonts/Galmuri9.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+        <div class="rules-section-divider"></div>
 
-body {
-    background-color: #000;
-    margin: 0;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    min-height: 100vh;
-    box-sizing: border-box;
-}
+        <div class="rules-container">
+            <div class="rules-header">
+                <h2 class="rules-title">규칙:</h2>
+            </div>
+            <ul class="rules-list">
+                <li>모든 무늬의 카드를 <span class="highlight-eb8ede-1">오른쪽 슬롯</span>에 <span class="highlight-eb8ede-2">오름차순</span>으로 쌓으세요.</li>
+                <li>다른 색깔 무늬끼리 <span class="highlight-eb8ede-2">내림차순</span>으로 카드를 쌓거나 옮길 수 있습니다. <span class="highlight-eb8ede-2">내림차순이기만 하면 카드 숫자가 반드시 이어질 필요는 없으며,</span> 따라서 7-4-3도 유효한 더미입니다.</li>
+                <li>왼쪽 더미들 사이에서 카드를 옮길 때마다, (가능하다면) 그 카드는 다른 더미 중 하나의 <span class="highlight-eb8ede-2">맨 위 카드</span>와 <span class="highlight-eb8ede-1">무작위로 자리를 바꿉니다</span>. 카드 더미를 옮길 때는 <span class="highlight-eb8ede-1">맨 위 카드</span>만 교체됩니다.</li>
+                <li><span class="highlight-eb8ede-2">S</span> 키를 누르면 자동으로 쌓입니다.</li>
+            </ul>
+        </div>
 
-.game-description-container {
-    max-width: 800px;
-    text-align: left;
-    line-height: 1.5;
-    color: #E0E0E0;
-    font-size: 1.1em;
-    word-break: keep-all; 
-    overflow-wrap: break-word; 
-}
-
-.game-title {
-    font-family: 'Galmuri11-Condensed', sans-serif;
-    color: #c56f68;
-    font-size: 2.2em;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
-    margin-top: 0;
-}
-
-.game-intro {
-    font-family: 'Galmuri9', sans-serif;
-    color: white;
-    font-size: 1.1em;
-    margin-bottom: 30px;
-}
-
-.difficulty {
-    font-family: 'Galmuri11-Condensed', sans-serif;
-    color: #c56f68;
-    font-size: 1.8em;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
-}
-
-.difficulty-star {
-    color: #ffce4d;
-}
-
-.game-info-playable {
-    font-family: 'Galmuri9', sans-serif;
-    color: #c56f68;
-    font-size: 1.1em;
-    margin-bottom: 5px;
-}
-
-.game-info-value {
-    font-family: 'Galmuri9', sans-serif;
-    color: #ffa32a;
-}
-
-/* --- 규칙 설명서 섹션 스타일 --- */
-.rules-section-divider {
-    border-top: 1px solid #44475a; 
-    margin: 40px 0; 
-}
-
-.rules-container {
-    background-color: #282a36; 
-    border: 1px solid #44475a; 
-    padding: 30px;
-    width: 100%; 
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); 
-    border-radius: 5px;
-    box-sizing: border-box; 
-    font-family: 'Galmuri9', sans-serif; 
-}
-
-.rules-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.rules-title {
-    font-size: 1.8em; 
-    color: #f8f8f2; 
-    margin: 0;
-    font-family: 'Galmuri9', sans-serif; 
-}
-
-.rules-list {
-    list-style: none; 
-    padding: 0;
-    margin: 0;
-}
-
-.rules-list li {
-    margin-bottom: 15px;
-    font-size: 1.1em; 
-    line-height: 1.6;
-}
-
-/* eb8ede 강조색 */
-.highlight-eb8ede-1,
-.highlight-eb8ede-2 { 
-    color: #eb8ede; 
-    font-weight: bold; 
-}
+    </div>
+</body>
+</html>
