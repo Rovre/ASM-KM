@@ -1,3 +1,5 @@
+/* style.css는 이전 응답과 동일합니다. (텍스트 내용만 변경되므로 CSS는 수정할 필요 없음) */
+/* 폰트 파일 정의 */
 @font-face {
     font-family: 'Galmuri11-Condensed';
     src: url('fonts/Galmuri11-Condensed.ttf') format('truetype');
@@ -13,75 +15,112 @@
 }
 
 body {
-    background-color: black; /* 배경색 검정 */
-    color: white; /* 글씨색 흰색 */
-    font-family: 'Galmuri11-Condensed', sans-serif; /* 기본 폰트 설정 */
+    background-color: #000;
     margin: 0;
     padding: 20px;
     display: flex;
-    justify-content: center; /* 전체 콘텐츠 가운데 정렬 */
-    align-items: flex-start; /* 상단 정렬 */
+    justify-content: center;
+    align-items: flex-start;
     min-height: 100vh;
     box-sizing: border-box;
-    font-size: 1.2em; /* 모든 텍스트 기본 크기 설정 */
-    word-wrap: break-word; /* 긴 단어 줄바꿈 */
-    overflow-wrap: break-word; /* 오버플로우 단어 줄바꿈 */
 }
 
-.container {
-    max-width: 800px; /* 최대 너비 설정 */
-    padding: 0;
-    line-height: 1.6;
-    text-align: center; /* container 내부 텍스트 가운데 정렬 */
+.game-description-container {
+    max-width: 800px;
+    text-align: left;
+    line-height: 1.5;
+    color: #E0E0E0;
+    font-size: 1.1em;
+    word-break: keep-all; 
+    overflow-wrap: break-word; 
 }
 
-p {
-    margin-bottom: 0.5em; /* 단락 사이 간격 조절 */
-    text-align: left; /* 기본 단락은 왼쪽 정렬 */
-}
-
-/* Galmuri11-Condensed 폰트가 적용된 텍스트 스타일 */
-.galmuri11-condensed-font {
+.game-title {
     font-family: 'Galmuri11-Condensed', sans-serif;
-    font-size: 1.5em; /* 크기 조금 키움 */
-    text-align: center; /* 가운데 정렬 */
-    margin-bottom: 1em; /* 간격 추가 */
+    color: #c56f68;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    margin-top: 0;
 }
 
-.main-title {
-    font-size: 2em; /* 메인 타이틀은 더 크게 */
-    margin-bottom: 1.5em;
-}
-
-
-/* Galmuri9 폰트가 적용된 텍스트 스타일 */
-.galmuri9-font {
+.game-intro {
     font-family: 'Galmuri9', sans-serif;
-    font-size: 1.1em; /* Galmuri11-Condensed보다 작게 */
-    text-align: left; /* 왼쪽 정렬 유지 */
+    color: white;
+    font-size: 1.1em;
+    margin-bottom: 30px;
 }
 
-/* 모바일 화면을 위한 미디어 쿼리 */
-@media (max-width: 768px) {
-    body {
-        padding: 10px;
-        font-size: 1.1em; /* 모바일에서 전체 글자 크기 약간 줄임 */
-    }
+.difficulty {
+    font-family: 'Galmuri11-Condensed', sans-serif;
+    color: #c56f68;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
 
-    .container {
-        max-width: 100%; /* 모바일에서는 최대 너비를 100%로 */
-        padding: 0 10px; /* 좌우 여백 추가 */
-    }
+.difficulty-star {
+    color: #ffce4d;
+}
 
-    .galmuri11-condensed-font {
-        font-size: 1.3em; /* 모바일에서 크기 조정 */
-    }
+.game-info-playable {
+    font-family: 'Galmuri9', sans-serif;
+    color: #c56f68;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
 
-    .main-title {
-        font-size: 1.8em; /* 모바일에서 메인 타이틀 크기 조정 */
-    }
+.game-info-value {
+    font-family: 'Galmuri9', sans-serif;
+    color: #ffa32a;
+}
 
-    .galmuri9-font {
-        font-size: 1em; /* 모바일에서 크기 조정 */
-    }
+/* --- 규칙 설명서 섹션 스타일 --- */
+.rules-section-divider {
+    border-top: 1px solid #44475a; 
+    margin: 40px 0; 
+}
+
+.rules-container {
+    background-color: #282a36; 
+    border: 1px solid #44475a; 
+    padding: 30px;
+    width: 100%; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); 
+    border-radius: 5px;
+    box-sizing: border-box; 
+    font-family: 'Galmuri9', sans-serif; 
+}
+
+.rules-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.rules-title {
+    font-size: 1.8em; 
+    color: #f8f8f2; 
+    margin: 0;
+    font-family: 'Galmuri9', sans-serif; 
+}
+
+.rules-list {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+
+.rules-list li {
+    margin-bottom: 15px;
+    font-size: 1.1em; 
+    line-height: 1.6;
+}
+
+/* eb8ede 강조색 */
+.highlight-eb8ede-1,
+.highlight-eb8ede-2 { 
+    color: #eb8ede; 
+    font-weight: bold; 
 }
