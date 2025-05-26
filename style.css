@@ -24,7 +24,7 @@ body {
     box-sizing: border-box;
     font-family: 'Galmuri9', sans-serif; /* 모든 텍스트의 기본 폰트를 Galmuri9으로 설정 */
     font-size: 1.1em; /* 모든 텍스트의 기본 크기를 1.1em으로 설정 */
-    color: white; /* 기본 텍스트 색상 */
+    color: #E0E0E0; /* 기본 텍스트 색상 */
     line-height: 1.5; /* 기본 줄 간격 */
     word-break: keep-all; /* 한글 단어 단위 줄바꿈 */
     overflow-wrap: break-word; /* 긴 단어 줄바꿈 */
@@ -39,7 +39,7 @@ body {
 
 .list-title {
     font-family: 'Galmuri11-Condensed', sans-serif;
-    color: white; /* 이 부분을 #c56f68 에서 white 로 변경 */
+    color: white; /* 솔리테어 게임 목록 제목 색상을 흰색으로 변경 */
     font-size: 2.5em; /* 목록 페이지 제목은 더 크게 */
     margin-bottom: 50px;
     letter-spacing: 2px;
@@ -75,7 +75,7 @@ body {
 }
 
 
-/* --- 개별 게임 페이지 스타일 (chaotic.html, hanoi.html) --- */
+/* --- 개별 게임 페이지 스타일 (chaotic.html, hanoi.html, time-travel.html) --- */
 .game-description-container {
     max-width: 800px;
     text-align: left;
@@ -83,7 +83,7 @@ body {
 
 .game-title {
     font-family: 'Galmuri11-Condensed', sans-serif;
-    color: #c56f68; /* 이 색상은 이제 hanoi.html에서는 .highlight-57a3c9로 오버라이드될 수 있음 */
+    color: #c56f68; /* 기본 색상. highlight 클래스가 오버라이드할 수 있음 */
     font-size: 2.2em;
     margin-bottom: 20px;
     letter-spacing: 1px;
@@ -93,14 +93,21 @@ body {
 
 .game-intro {
     font-family: 'Galmuri9', sans-serif;
-    color: white;
+    color: white; /* 본문 흰색 */
     font-size: 1.1em;
     margin-bottom: 30px;
 }
 
+.designer-credit { /* 디자이너 크레딧 스타일 추가 */
+    display: block; /* 줄바꿈 */
+    font-size: 0.9em; /* 약간 작게 */
+    color: #888; /* 조금 더 어두운 회색 */
+    margin-top: 10px;
+}
+
 .difficulty {
     font-family: 'Galmuri11-Condensed', sans-serif;
-    color: #c56f68; /* 이 색상은 이제 hanoi.html에서는 .highlight-57a3c9로 오버라이드될 수 있음 */
+    color: #c56f68; /* 기본 색상. highlight 클래스가 오버라이드할 수 있음 */
     font-size: 1.8em;
     margin-bottom: 20px;
     letter-spacing: 1px;
@@ -113,14 +120,14 @@ body {
 
 .game-info-playable {
     font-family: 'Galmuri9', sans-serif;
-    color: #c56f68; /* 이 색상은 이제 hanoi.html에서는 .highlight-57a3c9로 오버라이드될 수 있음 */
+    color: #c56f68; /* 기본 색상. highlight 클래스가 오버라이드할 수 있음 */
     font-size: 1.1em;
     margin-bottom: 5px;
 }
 
 .game-info-value {
     font-family: 'Galmuri9', sans-serif;
-    color: #ffa32a; /* 이 색상은 이제 hanoi.html에서는 .highlight-a7d962로 오버라이드될 수 있음 */
+    color: #ffa32a; /* 기본 색상. highlight 클래스가 오버라이드할 수 있음 */
 }
 
 /* --- 규칙 설명서 섹션 스타일 --- */
@@ -162,32 +169,39 @@ body {
     margin-bottom: 15px;
     font-size: 1.1em;
     line-height: 1.6;
-    color: white ;
+    color: white; /* 규칙 본문 텍스트는 흰색으로 */
 }
 
-/* 기존 강조색 */
+/* 강조색: eb8ede (핑크 계열) */
 .highlight-eb8ede {
-    color: #eb8ede;
+    color: #eb8ede !important;
     font-weight: bold;
 }
 
-/* 기존 강조색 */
+/* 강조색: e3c188 (노란색 계열) */
 .highlight-e3c188 {
-    color: #e3c188;
+    color: #e3c188 !important;
     font-weight: bold;
 }
 
-/* 새로운 강조색: 57a3c9 */
+/* 강조색: 57a3c9 (하늘색 계열) */
 .highlight-57a3c9 {
-    color: #57a3c9 !important; /* !important를 사용하여 다른 스타일보다 우선순위 높임 */
+    color: #57a3c9 !important;
     font-weight: bold;
 }
 
-/* 새로운 강조색: a7d962 */
+/* 강조색: a7d962 (초록색 계열) */
 .highlight-a7d962 {
-    color: #a7d962 !important; /* !important를 사용하여 다른 스타일보다 우선순위 높임 */
+    color: #a7d962 !important;
     font-weight: bold;
 }
+
+/* 새로운 강조색: 93ad6a (새로운 초록색 계열) */
+.highlight-93ad6a {
+    color: #93ad6a !important;
+    font-weight: bold;
+}
+
 
 /* --- 목록으로 돌아가기 버튼 스타일 (각 게임 페이지) --- */
 .back-to-list-container {
