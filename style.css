@@ -156,13 +156,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Galmuri9', sans-serif;
-}
-
-.rules-list li {
-    margin-bottom: 15px;
-    font-size: 1.1em;
-    line-height: 1.6;
-    color: white; /* 규칙 본문 텍스트 흰색 */
+    color: white; /* 규칙 본문 텍스트 흰색 - 원래 사용자님이 원하셨던 부분 */
 }
 
 /* 기존 강조색 */
@@ -177,25 +171,25 @@ body {
     font-weight: bold;
 }
 
-/* 새로운 강조색: 57a3c9 */
+/* 새로운 강조색: 57a3c9 (하노이 페이지용) */
 .highlight-57a3c9 {
-    color: #57a3c9 !important; /* !important를 사용하여 다른 스타일보다 우선순위 높임 */
+    color: #57a3c9 !important;
     font-weight: bold;
 }
 
-/* 새로운 강조색: a7d962 */
+/* 새로운 강조색: a7d962 (하노이 페이지 '예'용) */
 .highlight-a7d962 {
-    color: #a7d962 !important; /* !important를 사용하여 다른 스타일보다 우선순위 높임 */
+    color: #a7d962 !important;
     font-weight: bold;
 }
 
-/* 새로운 강조색: 93ad6a */
+/* 새로운 강조색: 93ad6a (시간 여행 페이지 제목, 난이도, 플레이 가능 여부) */
 .highlight-93ad6a {
     color: #93ad6a !important;
     font-weight: bold;
 }
 
-/* 새로운 강조색: 8bc8e7 */
+/* 새로운 강조색: 8bc8e7 (시간 여행 페이지 kinector) */
 .highlight-8bc8e7 {
     color: #8bc8e7 !important;
     font-weight: bold;
