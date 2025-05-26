@@ -118,10 +118,23 @@ body {
     margin-bottom: 5px;
 }
 
+/* 이제 game-info-value는 자체 색상을 가지지 않고, .playable-yes 또는 .playable-no에 의해 결정됩니다. */
 .game-info-value {
     font-family: 'Galmuri9', sans-serif;
-    color: #ffa32a; /* 기본 색상 (highlight 클래스로 오버라이드될 수 있음) */
+    /* color: #ffa32a;  기존 color 속성은 삭제하거나 주석 처리 */
+    font-weight: bold; /* '예'/'아니오' 텍스트를 굵게 */
 }
+
+/* '일반 카드 덱으로 플레이 가능'의 '예'에 해당하는 색상 (녹색) */
+.playable-yes {
+    color: #a7d962 !important;
+}
+
+/* '일반 카드 덱으로 플레이 가능'의 '아니오'에 해당하는 색상 (주황색) */
+.playable-no {
+    color: #ffa32a !important; /* 기존 game-info-value 색상과 일치하도록 주황색 지정 */
+}
+
 
 /* --- 규칙 설명서 섹션 스타일 --- */
 .rules-section-divider {
@@ -156,7 +169,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Galmuri9', sans-serif;
-    color: white; /* 규칙 본문 텍스트 흰색 - 원래 사용자님이 원하셨던 부분 */
+    color: white; /* 규칙 본문 텍스트 흰색 */
 }
 
 /* 기존 강조색 */
@@ -174,12 +187,6 @@ body {
 /* 하노이 페이지용 강조색 */
 .highlight-57a3c9 {
     color: #57a3c9 !important;
-    font-weight: bold;
-}
-
-/* 하노이 페이지 '예' 용 강조색 */
-.highlight-a7d962 {
-    color: #a7d962 !important;
     font-weight: bold;
 }
 
