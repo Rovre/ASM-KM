@@ -106,7 +106,7 @@ body {
     font-family: 'Galmuri9', sans-serif; /* 이 요소는 Galmuri9 사용 */
     font-size: 1.1em;
     margin-bottom: 5px;
-    letter-spacing: normal; /* game-info-playable의 letter-spacing은 기본으로 돌려놓습니다. */
+    letter-spacing: normal;
 }
 
 
@@ -182,12 +182,12 @@ body {
 }
 
 /* 공통 강조색들 */
-.highlight-eb8ede { /* 예: 오른쪽 슬롯, 가운데 슬롯, 같은 무늬, 타임머신 등 */
+.highlight-eb8ede { /* 예: 오른쪽 슬롯, 가운데 슬롯, 같은 무늬, 타임머신, 규칙, 3장, 가운데 슬롯, 위쪽 슬롯 */
     color: #eb8ede;
     font-weight: bold;
 }
 
-.highlight-e3c188 { /* 예: 오름차순, 내림차순, S 등 */
+.highlight-e3c188 { /* 예: 오름차순, 내림차순, 속성, JIJI */
     color: #e3c188;
     font-weight: bold;
 }
@@ -205,13 +205,29 @@ body {
 .highlight-e6a770 { /* 탭 솔리테어 테마색 */
     color: #e6a770 !important;
 }
+.highlight-e37269 { /* 바바테어 솔리테어 테마색 (KEKE에도 사용) */
+    color: #e37269 !important;
+    font-weight: bold;
+}
+
 
 /* 기타 개별 강조색 */
 .highlight-8bc8e7 { /* kinector 이름 색상 */
     color: #8bc8e7 !important;
     font-weight: bold;
 }
-
+.highlight-bc93de { /* 바바테어: Opposite, 종류, 반대, +5 */
+    color: #bc93de !important;
+    font-weight: bold;
+}
+.highlight-8faf62 { /* 바바테어: FOFO, 동사 */
+    color: #8faf62 !important;
+    font-weight: bold;
+}
+.highlight-71d3f7 { /* 바바테어: 같은 무늬, 무늬, ON SAME, ANY SUIT, 무늬 1, 무늬 2 */
+    color: #71d3f7 !important;
+    font-weight: bold;
+}
 
 /* --- 목록으로 돌아가기 버튼 스타일 (각 게임 페이지) --- */
 .back-to-list-container {
