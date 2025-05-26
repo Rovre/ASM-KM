@@ -192,6 +192,14 @@ body {
     font-weight: bold;
 }
 
+/* --- 추가: highlight-a7d962 클래스 정의 --- */
+.highlight-a7d962 { /* 탭솔리테어의 S, 바바테어의 숫자 1, 10, 3, 2, S */
+    color: #a7d962 !important;
+    font-weight: bold;
+}
+/* -------------------------------------- */
+
+
 /* 게임별 테마색 (제목, 난이도, 플레이 가능 여부에 사용) */
 .highlight-c56f68 { /* 혼돈의 솔리테어 테마색 */
     color: #c56f68 !important;
