@@ -22,47 +22,47 @@ body {
     align-items: flex-start;
     min-height: 100vh;
     box-sizing: border-box;
-    font-family: 'Galmuri9', sans-serif; /* 모든 텍스트의 기본 폰트를 Galmuri9으로 설정 */
-    font-size: 1.1em; /* 모든 텍스트의 기본 크기를 1.1em으로 설정 */
-    color: #E0E0E0; /* 기본 텍스트 색상 */
-    line-height: 1.5; /* 기본 줄 간격 */
-    word-break: keep-all; /* 한글 단어 단위 줄바꿈 */
-    overflow-wrap: break-word; /* 긴 단어 줄바꿈 */
+    font-family: 'Galmuri9', sans-serif;
+    font-size: 1.1em;
+    color: #E0E0E0; /* 기본 텍스트 색상 (일반 본문용) */
+    line-height: 1.5;
+    word-break: keep-all;
+    overflow-wrap: break-word;
 }
 
 /* --- 목록 페이지 스타일 (index.html) --- */
 .list-container {
     max-width: 800px;
-    text-align: center; /* 버튼을 중앙 정렬하기 위해 */
-    padding-top: 50px; /* 상단 여백 */
+    text-align: center;
+    padding-top: 50px;
 }
 
 .list-title {
     font-family: 'Galmuri11-Condensed', sans-serif;
-    color: white; /* 솔리테어 게임 목록 제목 색상을 흰색으로 변경 */
-    font-size: 2.5em; /* 목록 페이지 제목은 더 크게 */
+    color: white;
+    font-size: 2.5em;
     margin-bottom: 50px;
     letter-spacing: 2px;
 }
 
 .game-buttons-container {
     display: flex;
-    flex-direction: column; /* 버튼을 세로로 나열 */
-    gap: 20px; /* 버튼 간 간격 */
-    align-items: center; /* 가로 중앙 정렬 */
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
 }
 
 .game-button {
-    display: block; /* 블록 요소로 만들어 너비 전체를 차지하고 마진을 잘 받도록 */
-    width: 300px; /* 버튼 너비 고정 */
+    display: block;
+    width: 300px;
     padding: 15px 30px;
     background-color: #44475a;
     color: #f8f8f2;
     text-decoration: none;
     border: 2px solid #6272a4;
     border-radius: 5px;
-    font-family: 'Galmuri11-Condensed', sans-serif; /* 버튼 폰트도 Galmuri11-Condensed로 */
-    font-size: 1.5em; /* 버튼 텍스트 크기 */
+    font-family: 'Galmuri11-Condensed', sans-serif;
+    font-size: 1.5em;
     cursor: pointer;
     transition: background-color 0.2s, border-color 0.2s, color 0.2s;
     text-align: center;
@@ -75,64 +75,68 @@ body {
 }
 
 
-/* --- 개별 게임 페이지 스타일 (chaotic.html, hanoi.html, timetravel.html, tap.html) --- */
+/* --- 개별 게임 페이지 스타일 공통 --- */
 .game-description-container {
     max-width: 800px;
     text-align: left;
 }
 
-.game-title {
-    font-family: 'Galmuri11-Condensed', sans-serif;
-    color: #c56f68; /* 기본 색상 (highlight 클래스로 오버라이드될 수 있음) */
-    font-size: 2.2em;
-    margin-bottom: 20px;
+/* 테마색을 가질 요소들의 기본 스타일 */
+.game-title,
+.difficulty,
+.game-info-playable {
+    font-family: 'Galmuri11-Condensed', sans-serif; /* 이 요소들은 항상 이 폰트를 사용 */
     letter-spacing: 1px;
-    margin-top: 0;
     font-weight: bold;
+    /* color 속성은 이제 각 게임의 테마색 클래스에 의해 정의됨 */
 }
 
+.game-title {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.difficulty {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.game-info-playable {
+    font-family: 'Galmuri9', sans-serif; /* 이 요소는 Galmuri9 사용 */
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    letter-spacing: normal; /* game-info-playable의 letter-spacing은 기본으로 돌려놓습니다. */
+}
+
+
+/* 소개 문구는 항상 흰색 */
 .game-intro {
     font-family: 'Galmuri9', sans-serif;
-    color: white; /* 본문 텍스트 흰색 */
+    color: white;
     font-size: 1.1em;
     margin-bottom: 30px;
 }
 
-.difficulty {
-    font-family: 'Galmuri11-Condensed', sans-serif;
-    color: #c56f68; /* 기본 색상 (highlight 클래스로 오버라이드될 수 있음) */
-    font-size: 1.8em;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
+/* 난이도 별표는 항상 이 색상 */
+.difficulty-star {
+    color: #ffce4d; /* 난이도 별 색상 */
+}
+
+/* '예'/'아니오' 텍스트 공통 스타일 */
+.game-info-value {
+    font-family: 'Galmuri9', sans-serif;
     font-weight: bold;
 }
 
-.difficulty-star {
-    color: #ffce4d;
-}
-
-.game-info-playable {
-    font-family: 'Galmuri9', sans-serif;
-    color: #c56f68; /* 기본 색상 (highlight 클래스로 오버라이드될 수 있음) */
-    font-size: 1.1em;
-    margin-bottom: 5px;
-}
-
-/* 이제 game-info-value는 자체 색상을 가지지 않고, .playable-yes 또는 .playable-no에 의해 결정됩니다. */
-.game-info-value {
-    font-family: 'Galmuri9', sans-serif;
-    /* color: #ffa32a;  기존 color 속성은 삭제하거나 주석 처리 */
-    font-weight: bold; /* '예'/'아니오' 텍스트를 굵게 */
-}
-
-/* '일반 카드 덱으로 플레이 가능'의 '예'에 해당하는 색상 (녹색) */
+/* '예'일 때의 색상 (녹색) */
 .playable-yes {
     color: #a7d962 !important;
 }
 
-/* '일반 카드 덱으로 플레이 가능'의 '아니오'에 해당하는 색상 (주황색) */
+/* '아니오'일 때의 색상 (주황색) */
 .playable-no {
-    color: #ffa32a !important; /* 기존 game-info-value 색상과 일치하도록 주황색 지정 */
+    color: #ffa32a !important;
 }
 
 
@@ -145,7 +149,6 @@ body {
 .rules-container {
     width: 100%;
     box-sizing: border-box;
-    font-family: 'Galmuri9', sans-serif;
     padding-top: 0;
     padding-bottom: 0;
 }
@@ -172,41 +175,43 @@ body {
     color: white; /* 규칙 본문 텍스트 흰색 */
 }
 
-/* 기존 강조색 */
-.highlight-eb8ede {
+.rules-list li {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* 공통 강조색들 */
+.highlight-eb8ede { /* 예: 오른쪽 슬롯, 가운데 슬롯, 같은 무늬, 타임머신 등 */
     color: #eb8ede;
     font-weight: bold;
 }
 
-/* 기존 강조색 */
-.highlight-e3c188 {
+.highlight-e3c188 { /* 예: 오름차순, 내림차순, S 등 */
     color: #e3c188;
     font-weight: bold;
 }
 
-/* 하노이 페이지용 강조색 */
-.highlight-57a3c9 {
+/* 게임별 테마색 (제목, 난이도, 플레이 가능 여부에 사용) */
+.highlight-c56f68 { /* 혼돈의 솔리테어 테마색 */
+    color: #c56f68 !important;
+}
+.highlight-57a3c9 { /* 하노이 솔리테어 테마색 */
     color: #57a3c9 !important;
-    font-weight: bold;
 }
-
-/* 시간 여행 페이지 제목, 난이도, 플레이 가능 여부용 강조색 */
-.highlight-93ad6a {
+.highlight-93ad6a { /* 시간 여행 솔리테어 테마색 */
     color: #93ad6a !important;
-    font-weight: bold;
+}
+.highlight-e6a770 { /* 탭 솔리테어 테마색 */
+    color: #e6a770 !important;
 }
 
-/* 시간 여행 페이지 kinector 용 강조색 */
-.highlight-8bc8e7 {
+/* 기타 개별 강조색 */
+.highlight-8bc8e7 { /* kinector 이름 색상 */
     color: #8bc8e7 !important;
     font-weight: bold;
 }
 
-/* 탭 솔리테어 페이지 제목, 난이도, 플레이 가능 여부용 강조색 */
-.highlight-e6a770 {
-    color: #e6a770 !important;
-    font-weight: bold;
-}
 
 /* --- 목록으로 돌아가기 버튼 스타일 (각 게임 페이지) --- */
 .back-to-list-container {
