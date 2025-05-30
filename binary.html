@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이진 솔리테어</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-description-container">
+        <h1 class="game-title highlight-aaaaaa">이진 솔리테어</h1>
+        <p class="game-intro">싱글 카드 솔리테어의 변형입니다. 이진법 계산 방식이 카드 조합에 정말 기묘한 차원을 더합니다! 다시 말하지만, 처음 몇 번만 재미있을 수도 있습니다.</p>
+        <p class="difficulty highlight-aaaaaa">난이도:<span class="difficulty-star"> ★★----</span></p>
+        <p class="game-info-playable highlight-aaaaaa">일반 카드 덱으로 플레이 가능: <span class="game-info-value playable-yes">예</span>, <span class="highlight-d8d962">카드 값(0 16개, 1 36개)을 어떻게 정할지 알아낼 수 있다면요.</span></p>
+
+        <div class="rules-section-divider"></div>
+
+        <div class="rules-container">
+            <div class="rules-header">
+                <h2 class="rules-title">규칙:</h2>
+            </div>
+            <ul class="rules-list">
+                <li>- 카드 값은 1과 0, 두 가지가 있습니다. 덱에는 1이 36장, 0이 16장 들어 있습니다.</li>
+                <li>- 한 장의 카드를 들고 있는 동안, 다른 카드를 마우스 오른쪽 버튼으로 클릭하면 들고 있는 카드를 맨 위에 놓고 카드들을 그룹으로 합칠 수 있습니다. 그룹은 최대 3장의 카드로 구성될 수 있습니다. 그룹에 카드를 추가하면, 새 카드가 해당 그룹의 첫 번째 카드가 됩니다.</li>
+                <li>- 그룹의 값은 그룹을 구성하는 카드들의 이진 값으로 결정됩니다. 그룹의 값은 왼쪽 상단 모서리에 표시됩니다.</li>
+                <li>- 카드/그룹을 오름차순/내림차순으로 옮기거나 쌓을 수 있습니다. 쌓는 순서는 더미 내에서 바뀔 수 있습니다: 예를 들어, 4-3-2-3은 유효한 더미입니다.</li>
+                <li>- 목표는 3개의 슬롯을 7부터 1까지 내림차순으로 이어지는 더미로 채우는 것입니다. 슬롯에서 이 목표가 달성되면, 해당 슬롯은 잠기고 더 이상 사용할 수 없게 됩니다.</li>
+                <li>- 오른쪽에는 카드/그룹 하나를 놓을 수 있는 추가 슬롯이 있습니다.</li>
+                <li>- 덱에는 목표를 달성하는 데 필요한 것보다 0이 한 장 더 들어 있다는 점에 유의하세요.</li>
+            </ul>
+        </div>
+        <div class="back-to-list-container">
+            <a href="index.html" class="back-button">목록으로 돌아가기</a>
+        </div>
+    </div>
+</body>
+</html>
