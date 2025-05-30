@@ -224,6 +224,10 @@ body {
     color: #4276a9 !important;
     font-weight: bold;
 }
+.highlight-aaaaaa { /* 이진 솔리테어 테마색 */
+    color: #aaaaaa !important;
+    font-weight: bold;
+}
 
 
 /* 기타 개별 강조색 */
@@ -243,7 +247,7 @@ body {
     color: #71d3f7 !important;
     font-weight: bold;
 }
-.highlight-d8d962 { /* 싱글 카드: 기술적으로 112장 필요하지만, 어떤 카드든 상관없습니다. */
+.highlight-d8d962 { /* 싱글 카드: 기술적으로 112장 필요하지만, 어떤 카드든 상관없습니다. 이진: 예, 카드 값(0 16개, 1 36개)을 어떻게 정할지 알아낼 수 있다면요. */
     color: #d8d962 !important;
     font-weight: bold;
 }
